@@ -1,2 +1,3 @@
 # Wine-Qualilty-Analysis
-This project is based on the Red Wine Dataset. The dataset is classified using the KNN Algorithm.
+The dataset of this project is the one provided by Corizo which is Red Wine dataset.
+The algorithm used is the KneigborsClassifier Algorithm.
