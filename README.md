@@ -1,5 +1,5 @@
 
-# Wine Quality Analysis 
+# Wine Quality Prediction
 
 This project explores the relationship between wine attributes and quality ratings using Exploratory Data Analysis (EDA), GridSearch, Cross Validation, and Random Forest algorithms. The goal is to build a model that can predict the quality of a wine based on its physical and chemical characteristics.
 
