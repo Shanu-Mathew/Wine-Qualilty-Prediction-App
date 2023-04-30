@@ -6,6 +6,8 @@ from dataclasses import dataclass
 
 from src.logger import logging
 from src.exception import CustomException
+
+from src.components.data_ingestion import DataIngestion
 @dataclass
 class DataCleaningConfig:
     raw_data="D:\Documents\Projects\Wine-Qualilty-Analysis\Data\Raw_Data.xlsx"
@@ -26,6 +28,6 @@ class DataCleaning:
             raise CustomException(e,sys)
 if __name__=="__main__":
     obj=DataCleaning()
-    cleaned_data=obj.initiate_data_cleaning()
-    print(cleaned_data)
-
+    cleaned_data_path=obj.initiate_data_cleaning()
+    data_ingestion=DataIngestion()
+    DataIngestion.initiate_data_ingestion(data_ingestion,cleaned_data_path=cleaned_data_path)
