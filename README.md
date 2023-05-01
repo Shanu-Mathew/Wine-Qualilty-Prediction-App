@@ -4,7 +4,7 @@
 This project explores the relationship between wine attributes and quality ratings using Exploratory Data Analysis (EDA), GridSearch, Cross Validation, and Random Forest algorithms. The goal is to build a model that can predict the quality of a wine based on its physical and chemical characteristics.
 
 ## Data
-The data used in this project comes from the UCI Machine Learning Repository. The dataset contains 1599 samples of red wine and their corresponding quality ratings, ranging from 0 (very bad) to 10 (very excellent). There are 11 attributes in total, including fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol.
+The data used in this project comes the dataset taken from Kaggle. The dataset contains 1599 samples of red wine and their corresponding quality ratings, ranging from 0 (very bad) to 10 (very excellent). There are 11 attributes in total, including fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol.
 
 ## Analysis
 The analysis starts with EDA to understand the distribution of each attribute and its relationship with the quality rating. The distributions are visualized using histograms, boxplots, and scatterplots. The correlations between attributes are also explored using correlation matrices and heatmaps.
