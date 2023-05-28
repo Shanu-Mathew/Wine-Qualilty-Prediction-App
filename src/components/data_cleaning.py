@@ -9,6 +9,8 @@ from src.exception import CustomException
 
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
+
 @dataclass
 class DataCleaningConfig:
     raw_data=os.path.join('Data','Raw_Data.xlsx')
@@ -38,3 +40,5 @@ if __name__=="__main__":
     data_transformation=DataTransformation()
     train_arr,test_arr,preprocessor_path1=data_transformation.initiate_data_transformation(train_data,test_data)
 
+    model_trainer=ModelTrainer()
+    print(model_trainer.initiate_model_trainer(train_arr,test_arr))

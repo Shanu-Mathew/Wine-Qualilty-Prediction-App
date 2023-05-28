@@ -64,6 +64,7 @@ class DataTransformation:
                 obj=preprocessor_obj
 
             )
+            logging.info("Data Transformation Process Complete")
             return (train_arr,
                     test_arr,
                     self.data_transformation_config.preprocessor_obj_path
