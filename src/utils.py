@@ -1,5 +1,7 @@
 import os
+import sys
 import joblib
+
 
 from sklearn.model_selection import GridSearchCV
 
@@ -37,3 +39,11 @@ def evaluate_model(X_train,Y_train,X_test,Y_test,models,param):
         report[list(models.keys())[i]]=test_model_score
 
     return report
+
+def load_object(file_path_obj):
+    try:
+        model=joblib.load(file_path_obj)
+        return model
+    except Exception as e:
+        raise CustomException(e,sys)
+
