@@ -9,7 +9,7 @@ st.write('''
 ''', unsafe_allow_html=True)
 
 # Load the wine quality dataset
-wine_data = pd.read_csv('Assets\cleaned_data.csv')
+wine_data = pd.read_csv('.\Assets\cleaned_data.csv')
 
 class QualityPredictionApp:
     def input():
