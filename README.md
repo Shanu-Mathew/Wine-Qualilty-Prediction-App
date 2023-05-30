@@ -25,7 +25,8 @@ The oversampling improved the performance of the model significantly, as indicat
 ## Results
 The Random Forest algorithm performs very well on the oversampled wine quality dataset, with an accuracy of 0.95 and r2_score of 0.96 on a random train test split. The most important attributes for predicting wine quality are alcohol, volatile acidity, and sulphates, which have the highest feature importances in the model. The analysis also shows that there is a negative correlation between volatile acidity and wine quality, while there is a positive correlation between alcohol and wine quality.
 
-
+##Streamlit App
+This repository contains a concise Streamlit application for wine quality analysis. Using a machine learning model, the app predicts the quality of wines based on their chemical properties. Users can input the wine features, and the app provides quality predictions and corresponding probabilities. To run the app locally, follow the instructions in the README file. 
 
 ## Libraries
 This project utilizes several Python libraries for data analysis and machine learning, including:
@@ -43,3 +44,38 @@ This project demonstrates the use of EDA, GridSearch, and Random Forest algorith
 In addition to the machine learning techniques, oversampling was performed using the imblearn library, which improved the accuracy of the model. The final model achieved an accuracy of 0.95 and an r2 score of 0.96 on a random train-test split.
 
 Further analysis could include exploring other machine learning algorithms or analyzing the wine quality dataset separately for red wines.
+
+##How to Run the project ?
+
+To run a Streamlit app using the code provided in the repository's README file, follow these steps:
+
+1) Clone the Repository: Start by cloning the repository to your local machine. You can use the following command in your terminal or command prompt:
+```python
+git clone <repository-url>
+```
+2) Navigate to the Repository: Change your working directory to the cloned repository:
+```python
+cd <repository-folder>
+```
+3) Set Up a Virtual Environment (Optional): It is recommended to create a virtual environment to isolate the app's dependencies. You can use tools like venv or conda to create a virtual environment:
+```python
+conda create --name myenv
+conda activate myenv
+```
+4) Install Dependencies: Install the required dependencies by running the following command, assuming you have pip installed:
+
+```python
+pip install -r requirements.txt
+```
+This command will install all the necessary packages specified in the requirements.txt file.
+
+5) Run the Streamlit App: Once the dependencies are installed, you can start the Streamlit app by executing the following command:
+
+```python
+streamlit run app.py
+```
+This command will launch the Streamlit development server and start the app.
+
+7) Access the App: After running the above command, you will see a local web address (e.g., http://localhost:8501). Open a web browser and enter the provided address to access the Streamlit app.
+
+You should now be able to interact with the Streamlit app and perform wine quality analysis based on the provided instructions and features.
